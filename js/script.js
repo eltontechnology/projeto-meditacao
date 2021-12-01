@@ -21,15 +21,15 @@ function validar(){
         return false;   
     }
     if(logradouro == ''){
-        alert('Preencha o Campo Nome!');
+        alert('Preencha o Campo Logradouro!');
         return false;   
     }
     if(numero == ''){
-        alert('Preencha o Campo Nome!');
+        alert('Preencha o Campo Número!');
         return false;   
     }
     if(uf == ''){
-        alert('Preencha o Campo Nome!');
+        alert('Preencha o Campo UF!');
         return false;   
     }
 
