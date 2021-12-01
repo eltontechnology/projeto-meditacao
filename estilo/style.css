@@ -1,0 +1,260 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'Android';
+    src: url(../fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+} 
+
+:root{
+    --cor0: #ffffff;
+    --cor1: #F2F2F2;
+    --cor2: #e9e4a7;
+    --cor3: #e8ecad;
+    --cor4: #ecc7ce;
+    --cor5: #a55f9c;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: var(--cor5);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#img01 {
+    padding-top: 50px;
+}
+body{
+    background-color:var(--cor3);
+    font-family:var(--fonte-padrao);
+}
+
+h1{
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-decoration: underline;
+    padding-top: 100px;
+    padding-bottom: 20px
+}
+h2{
+    font-size: 1.3em;
+    
+    font-family: var(--fonte-padrao);
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    text-indent: 5px;
+    
+}
+
+p{
+    text-align: justify;
+    padding-bottom: 20px;
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    font-size: 2em;
+    
+}
+header h1{
+    text-decoration: none;
+    font-size: 3em;
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.349);
+    
+}
+header > p{
+    color: white;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.349);
+}
+nav{
+    background-color: var(--cor5);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+nav > a{
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+nav :hover{
+
+    background-color: var(--cor2);
+}
+main{
+    background-color: white;
+    min-width: 280px;
+    max-width: 800px;
+    margin: auto;
+    padding: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+main img{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+main img.pequena{
+    max-width: 280px;
+    display: block;
+    margin: auto;
+    
+}
+main h1{
+    color: var(--cor5);
+    font-family: var(--fonte-padrao);
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 15px;
+    line-height: 2em;
+    font-size: 1.1em;
+}
+main strong{
+    color: var(--cor4);
+    font-weight: bold;
+    padding: 2px 6px;
+}
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--cor1);
+    color: var(--cor5);
+    border-radius: 3px;
+    padding: 2px 6px;
+}
+main a:hover{
+    color: var(--cor4);
+}
+
+iframe{
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.404);
+}
+aside a{
+    background-color: var(--cor3);
+}
+
+aside > h3{
+    background-color: var(--cor5);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+footer p{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+form{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 8px;
+    margin-bottom: 25px;
+    position: relative;
+}
+#btn{
+    background-color: var(--cor5);
+    padding: 10px;
+    border-radius: 10px;
+    width:100px;
+    color:white;
+    transition-duration: .5s;
+}
+#btn:hover{
+    background-color: var(--cor2)
+}
+#cadastro{
+    margin-bottom:25px;
+}
+#nome{
+    margin-left: 45px;
+}
+#email{
+    margin-left: 43px; 
+}
+#telefone{
+    margin-left: 28px;
+}
+#logradouro{
+    margin-left: 5px;
+}
+#numero{
+    margin-left: 29px;
+}
+#uf{
+    margin-left: 65px;
+}
+fieldset{
+    border-radius: 10px;
+    padding: 10px;
+}
+#primeiro {
+    margin-bottom: 30px;
+}
+#segundo{
+    margin-bottom: 30px;
+}
+#terceiro{
+    margin-bottom: 30px;
+}
+#txt-assinatura {
+    font-size: 1.7em;
+    color: white;
+    background-color: var(--cor5);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.404);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.349);
+}
+.h1{
+    text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.349);
+}
+
+
+
+
+

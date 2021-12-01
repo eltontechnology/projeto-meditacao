@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeditaCão</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>MeditaCão</h1>
+        <p>
+            Tudo aquilo que você sempre quis saber sobre seu cãozinho.
+        </p>
+    </header>
+
+    <main>
+        <article>
+            <picture>
+                <source media="(max-width: 600px)" srcset="imagens/Logomeditacao-G.png">
+                <img src="imagens/Logomeditacao-G.png" id="img01">
+            </picture>
+
+            <h1 class="h1">GASTRONOMIA</h1>
+
+            <h2>Restaurantes criam para pets cardápios que imitam os pratos dos humanos.</h2>
+
+            <picture>
+                <source media="(max-width: 700px)" srcset="imagens/img1-P.png">
+                <img src="imagens/img1.png" alt="Primeiro mascote do Android">
+            </picture>
+
+            <p>
+                O afago gastronômico é uma extensão do conceito pet friendly, adotado em toda parte.
+            </p>
+
+            <nav>
+                <a
+                    href="https://veja.abril.com.br/gastronomia/restaurantes-criam-para-pets-cardapios-que-imitam-os-pratos-dos-humanos/">Matéria
+                    Completa</a>
+            </nav>
+
+            <h1 class="h1">SAÚDE</h1>
+
+            <h2>Cães podem identificar o novo coronavírus com alta precisão, diz estudo.</h2>
+
+            <picture>
+                <source media="(max-width: 600px)" srcset="imagens/img2-P.png">
+                <img src="imagens/img2.png">
+            </picture>
+
+            <p>Uma pesquisa em fase inicial mostrou que após treinamento, cachorros são capazes de farejar o vírus em
+                máscaras e roupas com mais de 90% de acerto.</p>
+
+            <nav>
+                <a
+                    href="https://veja.abril.com.br/saude/caes-podem-identificar-o-novo-coronavirus-com-alta-precisao-diz-estudo/">Matéria
+                    Completa</a>
+            </nav>
+
+            <h1 class="h1">IDEAIS</h1>
+
+            <h2>Os cachorros são mesmo os melhores amigos das crianças.</h2>
+
+            <picture>
+                <source media="(max-width: 600px)" srcset="imagens/img3-P.png">
+                <img src="imagens/img3.png">
+            </picture>
+
+            <p>Pesquisa científica mostra que, além de fonte de amor, cães de estimação são aliados no desenvolvimento
+                emocional de jovens entre 2 e 5 anos.</p>
+
+            <nav>
+                <a href="https://veja.abril.com.br/ideias/os-cachorros-sao-mesmo-os-melhores-amigos-das-criancas/">Matéria
+                    Completa</a>
+            </nav>
+
+            <h1 class="h1">CIÊNCIA</h1>
+
+            <h2>Seu cachorro não entende as suas expressões faciais.</h2>
+
+            <picture>
+                <source media="(max-width: 600px)" srcset="imagens/cao-P.png">
+                <img src="imagens/cao.png">
+            </picture>
+
+            <p>Segundo a pesquisa, rosto serve apenas para que o cão identifique a espécie daquele com quem interage.
+            </p>
+
+            <nav>
+                <a href="https://veja.abril.com.br/ciencia/estudo-seu-cachorro-nao-entende-as-suas-expressoes-faciais/">Matéria
+                    Completa</a>
+            </nav>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9DhCUZaNIm4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <p id="txt-assinatura">Assine nossa revista física por apenas R$ 26,00/mês</p>
+            <img src="imagens/capa-revista.png" alt="">
+
+            <aside>
+                <h3 id="cadastro">Faça seu cadastro para fazer a assinatura!</h3>
+                <form action="" method="post" name="formCadastro" onsubmit="return validar()">
+                    <fieldset id="primeiro">
+                        <legend>Dados Pessoais</legend>
+                        <div>
+                            <label>Nome</label>
+                            <input type="text" maxlength="30" name="nome" id="nome" minlength="3">
+                        </div>
+                        <div>
+                            <label>E-mail</label>
+                            <input type="email"  maxlength="30" name="email" id="email">
+                        </div>
+                        <div>
+                            <label>Telefone</label>
+                            <input type="number" minlength="9" maxlength="11" name="telefone" id="telefone" >
+                        </div>
+                    </fieldset>
+                    <fieldset id="segundo">
+                        <legend>Endereço</legend>
+                        <div>
+                            <label>Logradouro</label>
+                            <input type="text" maxlength="50" name="logradouro" id="logradouro" minlength="3">
+                        </div>
+                        <div>
+                            <label>Número</label>
+                            <input type="number" maxlength="999999" name="numero" id="numero">
+                        </div>
+                        <div>
+                            <label>UF</label>
+                            <input type="text" maxlength="2" name="uf" id="uf" placeholder="ex: RS">
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset id="terceiro">
+                        <legend>Sexo</legend>
+                        <div id="radio">
+                            <input type="radio" name="sexo" id="masculino" >
+                            <label for="masculino">Masculino</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="sexo" id="feminino"  checked="checked">
+                            <label for="feminino">Feminino</label>
+                        </div>
+                    </fieldset>
+                     <input type="submit" value="Enviar" id="btn">
+                     
+                </form>
+
+            </aside>
+
+        </article>
+    </main>
+    <footer>
+        <p>
+            copyright © 2021 todos os direitos reservados
+        </p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
