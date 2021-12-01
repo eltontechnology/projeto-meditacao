@@ -188,6 +188,7 @@ footer a{
 form{
     width: 100%;
     max-width: 500px;
+    min-width: 280px;
     display: flex;
     flex-direction: column;
 }
